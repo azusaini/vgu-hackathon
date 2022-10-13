@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,48 +10,35 @@
     <script src="./libraries/theme-changer.js"></script>
 </head>
 <body>
-    <div class="desktop navbar bg-base-100 shadow-lg my-4">
-        <div class="flex-none">
-          <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-          </button>
-        </div>
-        <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl">Landing Page</a>
-        </div>
-        <div class="flex-1">
-            <select data-choose-theme class="p-2 bg-base-100 shadow-lg">
-                <ul class="p-2 bg-base-100 shadow-lg">
-                    <option value="light">Light</option>
-                    <option value="dark">Dark</option>
-                    <option value="">Default</option>
-                    <option value="night">Night</option>
-                    <option value="valentine">Valentine</option>
-                    <option value="cupcake">Cupcake</option>
-                    <option value="bumblebee">Bumblebee</option>
-                    <option value="emerald">emerald</option>
-                    <option value="corporate">corporate</option>
-                    <option value="synthwave">synthwave</option>
-                    <option value="retro">retro</option>
-                    <option value="cyberpunk">cyberpunk</option>
-                    <option value="garden">garden</option>
-                    <option value="forest">forest</option>
-                    <option value="dracula">dracula</option>
-                    <option value="black">black</option> 
-                </ul>     
-            </select>
-          </div>
-        <div class="flex-none">
-          <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
-          </button>
-        </div>
-    </div>
-    
-
-
-    <div class="body-content px-2 py-2">
-        <div class="heading px-20 left-1/2 pt-7 text-6xl">Project Name</div>
-    </div>
+    <main class="flex items-center justify-center h-screen bg-gray-100">
+        <form>
+            <div class="bg-white w-96 p-6 rounded shadow-sn">
+                <div class="flex items-center justify-center nb-4">
+                    <img src="./assets/images.png" class="h-32" />
+                </div>
+                <div class="bg-red-500 px-3 py-2 rounded text-gray-100mb-3">
+                    <p>Wrong email entered</p>
+                </div>
+                <label class="text-gray-700">Email</label>
+                <input
+                    class="w-full py-2 bg-gray-50 text-gray-500 px-1
+                    outline -none mb-4"
+                    type="email"
+                />
+                <label class="text-gray-700">Password</label>
+                <input
+                  class="w-full py-2 bg-gray-50 text-gray-500 px-1 outline -none mb-4"
+                    type="password"
+                />
+                <input
+                   id="remember"
+                   class="nb-6"
+                   type="checkbox"
+                />
+                <label for="remember" class="text-gray-700">Remember Me</label>
+                   <button type="submit" class="bg-blue-500 w-full transition-colors">Login</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
