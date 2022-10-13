@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 const port =  12345;
 
 
-
+app.use(express.static('./public'));
 
 //using routes
 app.use("/test",test_route);
