@@ -2,12 +2,7 @@
 
 const express = require("express");
 const router  = express.Router();
-
-
-let sendData = {
-    name : 'hi',
-    hello : 'heee'
-}
+const path = require("path");
 
 
 //global variables
@@ -22,7 +17,8 @@ router
 
 .get(async (req,res)=>{
     res.status(200);
-    res.json(sendData);
+    res.sendFile(path.join(__dirname , 'test.html'));
+    console.log(path.join(__dirname,"test.html"))
     res.end();
 })
 .post(async (req,res) => {
